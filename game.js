@@ -2,7 +2,6 @@
 var c = 0;
 const casas = Array(9).fill(0);
 const casaTest = Array(9).fill(0);
-console.log(casaTest);
 
 function clickAction(n) {
 	if (casaTest[n - 1] == "x" || casaTest[n - 1] == "o" || document.getElementById('result').innerHTML == "Temos um vencedor" || document.getElementById('result').innerHTML == "Temos um empate") {
@@ -38,7 +37,6 @@ function clickAction(n) {
 	if (c >= 5) {
 
 		if (casaTest[0] == casaTest[1] && casaTest[1] == casaTest[2] && casaTest[0] != 0) {
-			//colocar uma função aqui que receba o valor de "casaTest[]" e verifique se é x ou o e fale qual venceu
 			document.getElementById('result').innerHTML = "Temos um vencedor"
 		} else if (casaTest[3] == casaTest[4] && casaTest[4] == casaTest[5] && casaTest[3] != 0) {
 			document.getElementById('result').innerHTML = "Temos um vencedor"
