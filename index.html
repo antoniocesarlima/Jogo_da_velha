@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 	<title>Jogo da velha</title>
 </head>
+
 <body>
 	<header>
 		<h1>Jogo da velha</h1>
 	</header>
 	<section id="show">
 		<div class="container">
-			<div class="box 1" id='1' onclick="clicar(1)"></div>
-			<div class="box 2" id="2" onclick="clicar(2)"></div>
-			<div class="box 3" id="3" onclick="clicar(3)"></div>
+			<div class="box 1" id='1' onclick="clickAction(1)"></div>
+			<div class="box 2" id="2" onclick="clickAction(2)"></div>
+			<div class="box 3" id="3" onclick="clickAction(3)"></div>
 		</div>
 
 		<div class="container">
-			<div class="box" id="4" onclick="clicar(4)"></div>
-			<div class="box" id="5" onclick="clicar(5)"></div>
-			<div class="box" id="6" onclick="clicar(6)"></div>
+			<div class="box" id="4" onclick="clickAction(4)"></div>
+			<div class="box" id="5" onclick="clickAction(5)"></div>
+			<div class="box" id="6" onclick="clickAction(6)"></div>
 		</div>
 
 		<div class="container">
-			<div class="box" id="7" onclick="clicar(7)"></div>
-			<div class="box" id="8" onclick="clicar(8)"></div>
-			<div class="box" id="9" onclick="clicar(9)"></div>
+			<div class="box" id="7" onclick="clickAction(7)"></div>
+			<div class="box" id="8" onclick="clickAction(8)"></div>
+			<div class="box" id="9" onclick="clickAction(9)"></div>
 		</div>
 		<div id="result">
-			
+
 		</div>
 	</section>
 	<footer id="info">
 		<p id="subInfo">Sobre o jogo:</p>
 		<ul>
-			<li>O objetivo do jogo é fazer uma sequência de três símbolos iguais, seja em linha vertical, horizontal ou diagonal, enquanto tenta impedir que seu adversário faça o mesmo</li>
+			<li>O objetivo do jogo é fazer uma sequência de três símbolos iguais, seja em linha vertical, horizontal ou
+				diagonal, enquanto tenta impedir que seu adversário faça o mesmo</li>
 			<li>Quando um dos participantes faz uma linha, ganha o jogo</li>
 			<li>Alterna os símbolos a cada jogada</li>
 			<li>O símbolo ínicial sempre é o circulo</li>
@@ -43,4 +49,5 @@
 	</footer>
 	<script type="text/javascript" src="game.js"></script>
 </body>
+
 </html>
